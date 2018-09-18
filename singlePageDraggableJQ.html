@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Best Memories</title>
+    <meta charset="UTF-8">
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:700|Roboto" rel="stylesheet">
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <link href="./main.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .draggable {
+            width: 300px;
+            padding: 0.5em;
+            background: #eee;
+        }
+
+        .draggable img {
+            width: 100%;
+            cursor: -webkit-grab;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            var p = $("#draggable1");
+            var offset = p.offset();
+
+            //set
+            $("#draggable1").offset({ top: 200, left: 400 });
+            $("#draggable2").offset({ top: 400, left: 800 });
+            $("#draggable3").offset({ top: 280, left: 1200 });
+
+            $("#draggable1").draggable();
+            $("#draggable2").draggable();
+            $("#draggable3").draggable();
+            $("#draggable4").draggable();
+            $("#draggable5").draggable();
+            $("#draggable6").draggable();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <p class="logo">
+            <a href="#">BestMemories</a>
+        </p>
+        <nav role="navigation" class="top-nav">
+        </nav>
+    </div>
+    <header role="banner">
+        <h1>Album Page</h1>
+    </header>
+
+    <div style="padding-left: 15px;">
+        <a href="#">Add a New File</a>
+
+        <div id="draggable4" class="ui-widget-content draggable">
+            <img src="./images/ATT-OCTET-ST1.JPG">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+        <div id="draggable5" class="ui-widget-content draggable">
+            <img src="./images/ATT-OCTET-ST3.JPG">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+        <div id="draggable6" class="ui-widget-content draggable">
+            <img src="./images/ATT-OCTET-ST4.JPG">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+        <div id="draggable1" class="ui-widget-content draggable">
+            <img src="./images/ATT-OCTET-ST2.JPG">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+        <div id="draggable2" class="ui-widget-content draggable">
+            <img src="./images/pic_the_scream.png">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+        <div id="draggable3" class="ui-widget-content draggable">
+            <img src="./images/woman-1459220_1280.png">
+            <div>Photo Name</div>
+            <div>02/12/2018</div>
+            <div>This is the photo description and it can be long very long...</div>
+        </div>
+    </div>
+    <footer role="contentinfo">
+        <p>© 2018 Onca, Inc. Shlomi Benshlomo</p>
+    </footer>
+</body>
+
+</html>

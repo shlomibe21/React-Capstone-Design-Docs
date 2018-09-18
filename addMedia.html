@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Best Memories</title>
+    <meta charset="UTF-8">
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:700|Roboto" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet" type="text/css" />
+    <link href="./float-grid.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="index-page">
+    <div class="nav-bar">
+        <p class="logo">
+            <a href="#">BestMemories</a>
+        </p>
+        <nav role="navigation" class="top-nav">
+        </nav>
+    </div>
+    <header role="banner">
+        <h1>Add New Media</h1>
+    </header>
+    <form method="post" enctype="multipart/form-data" class="centered-container">
+        <div>
+            <label for="folder-name">Folder Name:</label>
+            <input type="text" id="folder-name" class="form-input" />
+        </div>
+        <div>
+            <label for="file">Add New Media:</label>
+            <input type="file" id="file" class="form-input btn" name="file" multiple>
+        </div>
+        <div>
+            <button class="btn">Submit</button>
+        </div>
+        <div class="dragdrop-container">To add new media, click on the 'Choose Files' button or drag and drop media
+            here!
+        </div>
+    </form>
+
+    <footer role="contentinfo">
+        <p>© 2018 Onca, Inc. Shlomi Benshlomo</p>
+    </footer>
+</body>
